@@ -1,0 +1,107 @@
+$bg: #0a0906;
+$wh-0: #000;
+$wh-1: #333;
+$wh-2: #666;
+$wh-3: #999;
+$wh-4: #ccc;
+$wh-5: #fff;
+
+$pri: #968c63;
+$sec: #c0b37f;
+$ter: #4f4a34;
+$qua: #302a1e;
+$pen: #1f1c14;
+$acc: #bda030;
+$acc-full: #ffd841;
+$acc-sec: #a5c5ba;
+$spr-green: #77c32f;
+
+body {
+  color: $pri;
+  background-color: $bg;
+}
+
+nav {
+  color: $pri;
+  background-color: $qua;
+}
+
+.banner, .banner p {
+  color: $acc-sec;
+}
+
+.container {
+  background-color: $ter;
+}
+
+nav .container {
+  padding: 1em;
+}
+
+.banner .container img {
+  display: block;
+  margin: auto;
+}
+
+nav .container img {
+  margin: unset;
+}
+
+.home-page .banner {
+  background-color: $ter;
+}
+
+footer {
+  background-color: $qua;
+}
+
+.navbar-nav .nav-link {
+  color: $pri;
+}
+
+a {
+  color: rgba($acc, 0.8) !important;
+}
+
+a:active {
+  color: $acc !important;
+}
+
+a:hover {
+  color: $acc-full !important;
+}
+
+.nav-pills.outline-active .nav-link.active {
+  background: $pri !important;
+  color: $acc-full !important;
+  border-bottom: none !important;
+  border-top: 3px solid $acc-sec;
+}
+
+.logo-font {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand {
+  background-image: $acc-sec !important;
+}
+
+.sidebar {
+  background-color: $pen !important;
+}
+
+.btn-outline-primary {
+  color: $spr-green !important;
+}
+
+.btn-outline-primary i {
+  color: $spr-green !important;
+}
+
+.profile-page .user-info {
+  background-color: $bg;
+}
+
+.user-img, .article-meta img {
+   border-radius: 2px !important;
+}
