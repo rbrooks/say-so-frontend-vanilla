@@ -216,11 +216,11 @@ export class HomeComponent extends HTMLElement {
                         <div class="feed-toggle">
                             <ul id="feedOptions" class="nav nav-pills outline-active">
                                 <li class="nav-item">
-                                    <a id="your-feed" class="nav-link active" href="">Your Feed</a>
+                                    <a id="globalFeedButton" href="#" class="nav-link">Public Feed</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a id="globalFeedButton" href="#" class="nav-link">Global Feed</a>
-                                </li>
+                                <a id="your-feed" class="nav-link active" href="">Your Page</a>
+                            </li>
                             </ul>
                         </div>
                         <div id="globalFeed">

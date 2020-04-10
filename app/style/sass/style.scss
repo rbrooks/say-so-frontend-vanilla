@@ -1,3 +1,5 @@
+@import "app/static/css/main";
+
 $bg: #0a0906;
 $wh-0: #000;
 $wh-1: #333;
@@ -31,20 +33,24 @@ nav {
 }
 
 .container {
+  padding-top: 1em;
+  padding-bottom: 1em;
   background-color: $ter;
 }
 
-nav .container {
-  padding: 1em;
+nav {
+  .container {
+    padding: 1em;
+
+    img {
+      margin: unset;
+    }
+  }
 }
 
 .banner .container img {
   display: block;
   margin: auto;
-}
-
-nav .container img {
-  margin: unset;
 }
 
 .home-page .banner {
@@ -104,4 +110,17 @@ a:hover {
 
 .user-img, .article-meta img {
    border-radius: 2px !important;
+}
+
+@mixin inner-shadow($background) {
+  box-shadow: inset 0 0 10px $background !important;
+}
+
+input[type=text], input[type=email], input[type=password], textarea {
+  background-color: rgba($bg, 0.8) !important;
+  @include inner-shadow($bg);
+}
+
+.btn-primary {
+  background-color: $spr-green;
 }

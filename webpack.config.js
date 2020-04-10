@@ -10,7 +10,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: ['whatwg-fetch', './app/index.js', './style.scss'],
+    entry: ['whatwg-fetch', './app/index.js'],
     output: {
         path: path.resolve('dist'),
         filename: 'index_bundle.js'
@@ -76,8 +76,11 @@ module.exports = {
         from: '**/*.html',
     }]), new webpack.IgnorePlugin(/vertx/),
     new CopyWebpackPlugin([{
-        from: 'static/img',
+        from: 'app/static/img',
         to: 'img'
+    },{
+        from: 'app/static/css',
+        to: 'css'
     }]), ],
     devServer: {
         hot: true,

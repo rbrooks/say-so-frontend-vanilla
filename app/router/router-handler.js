@@ -1,5 +1,6 @@
 var Navigo = require('navigo');
 import {CLoginComponent} from "../pages/login.comp";
+import {CLogoutComponent} from "../pages/logout.comp";
 import {AuthDefender} from "../auth/auth-defender";
 import {SettingsComponent} from "../pages/settings.comp";
 import {EditorComponent} from "../pages/editor.comp";
@@ -20,6 +21,7 @@ export class RouterHandler {
         var useHash = true;
         var hash = '#';
         this.router = new Navigo(root, useHash, hash);
+
         return RouterHandler.instance;
     }
 
@@ -39,6 +41,7 @@ export class RouterHandler {
         const routes = [
             {path: '/settings', resolve: SettingsComponent, canActivate: AuthDefender.canActivate},
             {path: '/login', resolve: CLoginComponent},
+            {path: '/logout', resolve: CLogoutComponent},
             {path: '/register', resolve: CRegisterComponent},
             {path: '/profile/:username', resolve: ProfileComponent},
             {path: '/article/:slug', resolve: ArticlePreviewComponent},

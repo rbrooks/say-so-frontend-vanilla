@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
-import {RouterHandler} from "../../router/router-handler";
-import {Authentication} from "../../auth/authentication";
+import {RouterHandler} from '../../router/router-handler';
+import {Authentication} from '../../auth/authentication';
 
 
 export class CNavComponent extends HTMLElement {
@@ -13,7 +13,6 @@ export class CNavComponent extends HTMLElement {
         this.$signin = null;
         this.$signup = null;
     }
-
 
     static get observedAttributes() {
         return [];
@@ -35,7 +34,6 @@ export class CNavComponent extends HTMLElement {
         this.$navUl = this.querySelector('ul.nav');
         this.$signin = this.querySelector('#signin');
         this.$signup = this.querySelector('#signup');
-
 
         if (Authentication.instance.auth) {
             this.userAuthenticated(Authentication.instance.auth);
@@ -70,8 +68,11 @@ export class CNavComponent extends HTMLElement {
         let settings = this.createNavItemLink('#/settings', '<i class="ion-gear-a"></i>&nbsp;Settings');
         this.$navUl.appendChild(settings);
 
-        let userProfile = this.createNavItemLink('#/profile/' + user.username, user.username);
+        let userProfile = this.createNavItemLink('#/profile/' + user.username, '<i class="ion-person"></i>&nbsp;' + user.username);
         this.$navUl.appendChild(userProfile);
+
+        let logout = this.createNavItemLink('#/logout', '<i class="ion-log-out"></i>&nbsp;Logout');
+        this.$navUl.appendChild(logout);
     }
 
     navigate(e, link) {
@@ -114,7 +115,7 @@ export class CNavComponent extends HTMLElement {
         return `
          <nav class="navbar navbar-light">
             <div class="container">
-                <img src="/img/logo-sayso-sm.png" width="110" height="35">
+                <a href="#/"><img src="/img/logo-sayso-sm.png" width="110" height="35"></a>
 
                 <ul class="nav navbar-nav pull-xs-right">
                     <li class="nav-item">

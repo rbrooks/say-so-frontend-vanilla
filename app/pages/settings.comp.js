@@ -1,6 +1,7 @@
 import {Http} from "../http/http";
 import {RouterHandler} from "../router/router-handler";
-"use strict";
+
+'use strict';
 
 export class SettingsComponent extends HTMLElement {
     constructor(params) {
@@ -48,11 +49,11 @@ export class SettingsComponent extends HTMLElement {
         if ($form.checkValidity()) {
             e.preventDefault();
             const data = {
-                "user": {
-                    "email": this.querySelector('#user-email').value,
-                    "bio": this.querySelector('#user-bio').value,
-                    "image": this.querySelector('#user-image').value,
-                    "username": this.querySelector('#username').value,
+                'user': {
+                    'email': this.querySelector('#user-email').value,
+                    'bio': this.querySelector('#user-bio').value,
+                    'image': this.querySelector('#user-image').value,
+                    'username': this.querySelector('#username').value,
                 }
             };
 
@@ -111,12 +112,12 @@ export class SettingsComponent extends HTMLElement {
                 <input id="user-password" class="form-control form-control-lg" type="password" placeholder="Password">
               </fieldset>
               <button id="update-button" class="btn btn-lg btn-primary pull-xs-right">
-                Update Settings
+                Save
               </button>
           </fieldset>
         </form>
         <hr>
-        <button id="logoutButton" class="btn btn-outline-danger">Or click here to logout.</button>
+        <button id="logoutButton" class="btn btn-outline-danger">Log out</button>
       </div>
 
     </div>

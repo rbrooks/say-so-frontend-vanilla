@@ -60,9 +60,9 @@ export class PopularTagsComponent extends HTMLElement {
     render() {
         return `
             <div class="sidebar">
-                <p>Popular Tags</p>
+                <p>Tags</p>
                 <div id="tagList" class="tag-list">
-                    Loading tags ...
+                    Loading ...
                 </div>
             </div>
         `;

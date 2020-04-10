@@ -29,6 +29,7 @@ export class Http {
                 headers['Authorization'] = 'Token ' + auth.token;
             }
         }
+
         return fetch(config.rest_url + path, {
             headers: headers
         });
@@ -46,8 +47,8 @@ export class Http {
             if (auth) {
                 token = auth.token;
             } else {
-                //stop immediately
                 RouterHandler.instance.router.navigate('#/login');
+
                 return new Promise((resolve, rej) => {
                     rej();
                 });
@@ -62,6 +63,7 @@ export class Http {
             if (response.status === 401) {
                 RouterHandler.instance.router.navigate('#/login');
             }
+
             return response.json();
         });
     }
@@ -78,14 +80,15 @@ export class Http {
             if (auth) {
                 token = auth.token;
             } else {
-                //stop immediately
                 RouterHandler.instance.router.navigate('#/login');
+
                 return new Promise((resolve, rej) => {
                     rej();
                 });
             }
             headers['Authorization'] = 'Token ' + token;
         }
+
         return fetch(config.rest_url + path, {
             headers: headers,
             method: 'PUT',
@@ -94,6 +97,7 @@ export class Http {
             if (response.status === 401) {
                 RouterHandler.instance.router.navigate('#/login');
             }
+
             return response.json();
         });
     }
@@ -120,6 +124,7 @@ export class Http {
             if (response.status === 401) {
                 RouterHandler.instance.router.navigate('#/login');
             }
+
             return response.json();
         });
     }
