@@ -49,7 +49,7 @@ The Rails MicroService must be running on **Port 3000** for the app to work. It 
 
 ## Screenshots
 
-Coming...
+![Screen Shot 2020-04-09 at 5 01 53 PM](https://user-images.githubusercontent.com/214047/78942995-dcfe0f80-7a88-11ea-9c62-52e5d7c1dbce.png)
 
 ## Running Demo
 
