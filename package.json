@@ -1,9 +1,9 @@
 {
-  "name": "vanilla-web-components",
+  "name": "say-so-frontend-vanilla",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/criticalbh/vanilla-web-components.git",
-  "author": "<admir_sabanovic@live.com>",
+  "repository": "https://github.com/iq9/say-so-frontend-vanilla.git",
+  "author": "<me@russbrooks.com>",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server",

@@ -83,8 +83,9 @@ module.exports = {
         to: 'css'
     }]), ],
     devServer: {
-        hot: true,
-        contentBase: './',
-        historyApiFallback: true
+        // Do not add `hot: true` here. The default is `true`. However, when
+        // you explicitly add it here, HMR succeeds in deploying the file
+        // upon changes, but it no longer auto-refreshses the browser.
+        contentBase: './'
     }
 };
