@@ -21,7 +21,7 @@ This project:
   * **No React** - The future (that arrived 3 years ago) is browser-native Web Components. :smile:
 * **JWT Tokens** - Authentication on the REST calls
 * **Node.js** - 13.8. Required locally to serve static assets. Not required on Prod.
-* **SCSS** - Dark GUI styled by hand
+* **CSS: Twitter Bootstrap** - Dark GUI and logo designed by me.
   * **Resposive Design** - Adapts to mobile
 * **Babel & WebPack** - Latest versions. Transpilation and ES6 support
   * **Hot Module Replacement (HMR)** - Auto-recompiles and refreshes browser on every code change.
