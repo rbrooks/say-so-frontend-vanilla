@@ -8,12 +8,12 @@ This project:
 
 * **Consumes a Rails MicroService** - Backed by Rails 5 and SQLite
 * **Browser Interface** - Makes XHR calls to the service for:
-  * **Blog Post CRUD:**
-  * **Post Comment CRUD:**
-  * **Login:**
-  * **Logout:**
-  * **Signup:**
-  * **User Profile CRUD:**
+  * **Blog Post CRUD**
+  * **Post Comment CRUD**
+  * **Login**
+  * **Logout**
+  * **Signup**
+  * **User Profile CRUD**
 
 ## Technologies
 
@@ -44,7 +44,6 @@ The Rails MicroService must be running on **Port 3000** for the app to work. It 
 * **MacOS**
 * **[VS Code](https://code.visualstudio.com/)**
 * **[Table Plus](https://tableplus.com/)**
-* **[Kitematic](https://kitematic.com/)**
 * **[Adobe PhotoShop](https://www.adobe.com/products/photoshop.html)**
 
 ## Screenshots
