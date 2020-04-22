@@ -1,8 +1,8 @@
-# Generated output
+# Generated CSS and JS assets. This directory becomes publically exposed.
 dist
 
 # VSCode versions used for testing VSCode extensions
 .vscode-test
 
 # Node dependencies
-node_modules/
+node_modules
