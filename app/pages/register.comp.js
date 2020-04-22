@@ -43,7 +43,7 @@ export class CRegisterComponent extends HTMLElement {
                     "password": this.$password.value
                 }
             };
-            Http.instance.doPost('/users', JSON.stringify(data)).then(r => {
+            Http.instance.doPost('users', JSON.stringify(data)).then(r => {
                 if (r.errors) {
                     for (var prop in r.errors) {
                         if(!r.errors.hasOwnProperty(prop)) continue;
@@ -72,7 +72,7 @@ export class CRegisterComponent extends HTMLElement {
  <div class="auth-page">
   <div class="container page">
     <div class="row">
-        
+
       <div class="col-md-6 offset-md-3 col-xs-12">
         <h1 class="text-xs-center">Sign up</h1>
         <p class="text-xs-center">

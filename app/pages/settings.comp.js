@@ -61,7 +61,7 @@ export class SettingsComponent extends HTMLElement {
             if (password && password.length > 0) {
                 data.user.password = password;
             }
-            Http.instance.doPut('/user', JSON.stringify(data), true).then(r => {
+            Http.instance.doPut('user', JSON.stringify(data), true).then(r => {
                 if (r.errors) {
                     let errors = r.errors;
                     for (var prop in errors) {
