@@ -3,7 +3,7 @@ import {RouterHandler} from './router/router-handler';
 import {Authentication} from './auth/authentication';
 import {Core} from './core/core';
 import {Http} from './http/http';
-import './style/sass/style.scss';
+import './style/scss/style.scss';
 
 /**
  * Order is important !
