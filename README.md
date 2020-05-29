@@ -2,11 +2,14 @@
 
 ## Overview
 
-A hobby project to bring my Ruby, Rails, and Vanilla-JS-Components skills up to date.
+A hobby project to bring my Vanilla-JS-Components skills up to date.
 
 This project:
 
-* **Consumes a Rails MicroService** - Backed by Rails 5 and SQLite
+* **Consumes a MicroService** - Supports being connected to any of several different Microservice backends:
+  * [Rails](https://github.com/iq9/say-so-backend-rails)
+  * [Python on Flask](https://github.com/iq9/say-so-backend-flask)
+  * [Rust on Rocket](https://github.com/iq9/say-so-backend-rocket)
 * **Browser Interface** - Makes XHR calls to the service for:
   * **Blog Post CRUD**
   * **Post Comment CRUD**
@@ -17,8 +20,8 @@ This project:
 
 ## Technologies
 
-* **Vanilla.js Web Components** - Consumes a Rails microservice.
-  * **No React** - The future (that arrived 3 years ago) is browser-native Web Components. :smile:
+* **Vanilla.js Web Components** - Consumes a microservice.
+  * **No React** - The future is browser-native Web Components. :smile:
 * **JWT Tokens** - Authentication on the REST calls
 * **Node.js** - Required locally to serve static assets. Not required on Prod.
 * **CSS: Twitter Bootstrap** - Dark GUI and logo designed by me.
